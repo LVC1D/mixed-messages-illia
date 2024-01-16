@@ -38,9 +38,9 @@ const mixedMessageGenerator = (arr1, arr2, arr3) => {
         4. Return the joined by ' ' array
     */ 
 
-    let randomIndex1 = Math.floor(Math.random() * 7);
-    let randomIndex2 = Math.floor(Math.random() * 7);
-    let randomIndex3 = Math.floor(Math.random() * 7);
+    let randomIndex1 = Math.floor(Math.random() * arr1.length);
+    let randomIndex2 = Math.floor(Math.random() * arr2.length);
+    let randomIndex3 = Math.floor(Math.random() * arr3.length);
 
     let newArr = [];
 
