@@ -37,4 +37,19 @@ const mixedMessageGenerator = (arr1, arr2, arr3) => {
         3. Push those Elements into the new array
         4. Return the joined by ' ' array
     */ 
+
+    let randomIndex1 = Math.floor(Math.random() * 7);
+    let randomIndex2 = Math.floor(Math.random() * 7);
+    let randomIndex3 = Math.floor(Math.random() * 7);
+
+    let newArr = [];
+
+    let phraseOne = arr1[randomIndex1];
+    let phraseTwo = arr2[randomIndex2];
+    let phraseThree = arr3[randomIndex3];
+
+    newArr.push(phraseOne, phraseTwo, phraseThree);
+    return newArr.join(' ');
 }
+
+console.log(mixedMessageGenerator(firstSentences, secondSentences, thirdSentences));
